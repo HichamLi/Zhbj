@@ -1,4 +1,4 @@
-package com.itql.zhbj.pager;
+package com.itql.zhbj.pagers;
 
 import android.content.Context;
 import android.view.View;
@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.itql.zhbj.MainActivity;
+import com.itql.zhbj.activities.MainActivity;
 import com.itql.zhbj.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 

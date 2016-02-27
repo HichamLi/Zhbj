@@ -1,4 +1,4 @@
-package com.itql.zhbj.fragment;
+package com.itql.zhbj.fragments;
 
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -7,13 +7,12 @@ import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
 import com.itql.zhbj.R;
-import com.itql.zhbj.pager.AffairPage;
-import com.itql.zhbj.pager.BasePager;
-import com.itql.zhbj.pager.HomePage;
-import com.itql.zhbj.pager.NewsPage;
-import com.itql.zhbj.pager.SettingPage;
-import com.itql.zhbj.pager.SmartServicePage;
-import com.jeremyfeinstein.slidingmenu.lib.CustomViewAbove;
+import com.itql.zhbj.pagers.AffairPage;
+import com.itql.zhbj.pagers.BasePager;
+import com.itql.zhbj.pagers.HomePage;
+import com.itql.zhbj.pagers.NewsPage;
+import com.itql.zhbj.pagers.SettingPage;
+import com.itql.zhbj.pagers.SmartServicePage;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 

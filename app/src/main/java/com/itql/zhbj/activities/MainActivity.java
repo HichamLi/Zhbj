@@ -1,12 +1,13 @@
-package com.itql.zhbj;
+package com.itql.zhbj.activities;
 
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
-import com.itql.zhbj.fragment.ContentFragment;
-import com.itql.zhbj.fragment.LeftMenuFragment;
+import com.itql.zhbj.R;
+import com.itql.zhbj.fragments.ContentFragment;
+import com.itql.zhbj.fragments.LeftMenuFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 

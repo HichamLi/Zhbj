@@ -1,4 +1,4 @@
-package com.itql.zhbj.fragment;
+package com.itql.zhbj.fragments;
 
 import android.view.View;
 

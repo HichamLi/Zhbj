@@ -1,4 +1,4 @@
-package com.itql.zhbj.view;
+package com.itql.zhbj.views;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;

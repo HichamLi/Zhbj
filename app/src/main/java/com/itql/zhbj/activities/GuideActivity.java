@@ -1,4 +1,4 @@
-package com.itql.zhbj;
+package com.itql.zhbj.activities;
 
 
 import android.content.Intent;
@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 
+import com.itql.zhbj.R;
 import com.itql.zhbj.utils.SPUtils;
 
 import java.util.ArrayList;

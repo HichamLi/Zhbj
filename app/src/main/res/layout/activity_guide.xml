@@ -4,7 +4,7 @@
     android:id="@+id/rl_guide"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.itql.zhbj.GuideActivity">
+    tools:context=".activities.GuideActivity">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_guide"

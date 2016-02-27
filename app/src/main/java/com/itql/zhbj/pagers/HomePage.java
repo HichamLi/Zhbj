@@ -1,28 +1,30 @@
-package com.itql.zhbj.pager;
+package com.itql.zhbj.pagers;
 
 import android.app.Activity;
+import android.view.View;
 import android.widget.TextView;
 
 /**
  * Created by HiChamLi on 2015/12/6.
  */
-public class AffairPage extends BasePager {
+public class HomePage extends BasePager {
 
     private Activity activity;
     public TextView tv_content;
 
-    public AffairPage(Activity activity) {
+    public HomePage(Activity activity) {
         super(activity);
         this.activity=activity;
     }
 
     public void initData(){
-        this.tv_head.setText("政务");
+        this.tv_head.setText("智慧北京");
         tv_content=new TextView(activity);
-        tv_content.setText("政务");
+        tv_content.setText("智慧北京");
         tv_content.setTextSize(24);
         this.fl_pager_content.addView(tv_content);
-        setSlidingMenuEnable(true);
+        setSlidingMenuEnable(false);
+        ib_menu.setVisibility(View.INVISIBLE);
     }
 
 
