@@ -43,14 +43,10 @@ public class GuideActivity extends AppCompatActivity {
     private void init(){
         rl_guide= (RelativeLayout) findViewById(R.id.rl_guide);
         ly_guide_point= (LinearLayout) findViewById(R.id.ly_guide_point);
+
+        initGuideImage();
+
         vp_guide= (ViewPager) findViewById(R.id.vp_guide);
-        imageViews=new int[]{R.drawable.guide_1,R.drawable.guide_2,R.drawable.guide_3};
-        imageViewList=new ArrayList<>();
-        for(int i=0;i<imageViews.length;i++){
-            ImageView imageView=new ImageView(this);
-            imageView.setImageResource(imageViews[i]);
-            imageViewList.add(imageView);
-        }
         vp_guide.setAdapter(new MyVPAdapter());
         vp_guide.addOnPageChangeListener(new MyPageChangeListener());
         initPoint();
@@ -65,14 +61,29 @@ public class GuideActivity extends AppCompatActivity {
         });
     }
 
-    private void initPoint(){
+    /**
+     * 初始化引导图片
+     */
+    private void initGuideImage() {
+        imageViews=new int[]{R.drawable.guide_1,R.drawable.guide_2,R.drawable.guide_3};
+        imageViewList=new ArrayList<>();
+        for(int i=0;i<imageViews.length;i++){
+            ImageView imageView=new ImageView(this);
+            imageView.setImageResource(imageViews[i]);
+            imageViewList.add(imageView);
+        }
+    }
 
+    /**
+     * 初始化圆点并附着在引导图片上
+     */
+    private void initPoint(){
         for(int i=0;i<imageViews.length;i++){
             View view=new View(this);
             view.setBackgroundResource(R.drawable.guide_gray_point);
             LinearLayout.LayoutParams layoutParams=new LinearLayout.LayoutParams(10,10);
             if(i>0){
-                layoutParams.leftMargin=10;
+                layoutParams.leftMargin=20;
             }
             view.setLayoutParams(layoutParams);
             ly_guide_point.addView(view);
