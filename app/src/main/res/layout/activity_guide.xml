@@ -43,8 +43,8 @@
         </LinearLayout>
         <View
             android:id="@+id/v_guide_red_point"
-            android:layout_width="6dp"
-            android:layout_height="6dp"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
             android:background="@drawable/guide_red_point"/>
     </RelativeLayout>
 </RelativeLayout>
